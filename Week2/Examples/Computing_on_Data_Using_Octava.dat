@@ -1,1 +1,41 @@
 %Computing_on_Data_Using_Octava.dat
+>> A = [1,2;3,4;5,6]
+A =
+
+   1   2
+   3   4
+   5   6
+
+>> B = [10,11;12,20;30,40]
+B =
+
+   10   11
+   12   20
+   30   40
+
+>> C = [10,20;30,40]
+C =
+
+   10   20
+   30   40
+
+
+
+.*   --> It does multiplication at the element level
+
+Example : A .* B
+ans =
+
+    10    22
+    36    80
+   150   240
+
+.^   --> It does square at the element level
+
+Example : >> A .^ 2
+ans =
+
+    1    4
+    9   16
+   25   36
+
