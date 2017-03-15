@@ -156,6 +156,18 @@ ans =
 
 
 
+max(D,[],1)    ---> Gives the maximum value at the column level
+
+8 9 7
+
+max(D,[],1)    ---> Gives the maximum value at the row level
+8
+9
+7
+
+sum(D,1)  --> Sum at the column level
+Sum(D,2)  --> Sum at the row level
+Sum(Sum(D .* eye(D)))   --> Sum at the diognal level
 
 
 
