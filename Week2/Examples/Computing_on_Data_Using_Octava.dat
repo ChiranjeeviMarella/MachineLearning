@@ -39,3 +39,126 @@ ans =
     9   16
    25   36
 
+./   --> It does reciprocal at the element level
+
+Example : >> 1 ./ A
+ans =
+
+   1.00000   0.50000
+   0.33333   0.25000
+   0.20000   0.16667
+
+>> log(A)
+ans =
+
+   0.00000   0.69315
+   1.09861   1.38629
+   1.60944   1.79176
+
+>> exp(A)
+ans =
+
+     2.7183     7.3891
+    20.0855    54.5982
+   148.4132   403.4288
+   
+   
+  >> abs([-1;-2;3])
+ans =
+
+   1
+   2
+   3
+ 
+  
+  ------ Add 3 to the each element of Matrix A
+  >> A
+A =
+
+   1   2
+   3   4
+   5   6
+   
+>>  A + 3*ones(length(A),1)    ---> ones(lengths(A),1) will create 3*1 matrix with 1 as element
+ans =
+
+   4   5
+   6   7
+   8   9
+   
+
+
+ V = [1 10 60 30 ]
+V =
+
+    1   10   60   30
+
+>> [Val, ind] = max(v)
+Val =  400000
+ind =  3
+
+
+----> Element level comparision
+Returns 1 if it is True if False returns 0
+
+ V <30
+ans =
+
+  1  1  0  0
+  
+----> Find
+Finds the index of variables for which the condition is true
+
+>> find(V<30)
+ans =
+
+   1   2
+   
+-----> Magic number : All the rows, columns diagnal level the sum is same
+
+ E = magic(4)
+E =
+
+   16    2    3   13
+    5   11   10    8
+    9    7    6   12
+    4   14   15    1
+    
+D=magic(3)
+D =
+
+   8   1   6
+   3   5   7
+   4   9   2
+   
+
+[r,c] = find (D >= 7)  --> r represents Row index, C represents Column index
+
+
+>> t = [1 .5 2 2.5]
+t =
+
+   1.00000   0.50000   2.00000   2.50000
+
+>> sum(t)  ---> Do sum
+ans =  6
+>> prod(t)   ---> Do multiplication
+ans =  2.5000
+>> floor(t)    ----> Round off to min value
+ans =
+
+   1   0   2   2
+
+>> ceil(t)    ---> Round off to max value
+ans =
+
+   1   1   2   3
+
+
+
+
+
+
+
+
+  
